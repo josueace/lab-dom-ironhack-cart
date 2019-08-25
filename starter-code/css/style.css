@@ -1,3 +1,7 @@
+.flexy {
+  display: flex;
+  justify-content: space-between;
+}
 input {
   border: solid 1px black;
 }
@@ -28,6 +32,10 @@ input {
     color: #fff;
     background-color: #5cb85c;
     border-color: #4cae4c;
+    margin-left:auto;
+    margin-right:auto;
+    display:block;
+    margin-top:20px
 }
 
 .btn-delete {
