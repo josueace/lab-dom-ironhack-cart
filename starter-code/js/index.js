@@ -2,16 +2,12 @@ var totalQty=2;
 
 function deleteItem(e){
 	
-alert('delete');
-
 let parts=e.target.id.split("-");
 let ele='flexy-'+parts[1];
-alert(ele);
-
 debugger;
 var parent = document.getElementById("items");
 var child = document.getElementById(ele);
-//var parent-child.parent;
+
 parent.removeChild(child);	
 
 }
@@ -25,8 +21,7 @@ function updatePriceByProduct(productPrice, index){
 }
 
 function getTotalPrice() {
-	
- alert('gettotalpric');
+
  let totalAcum=0;
  
  for (let i=0;i<totalQty;i++)
@@ -37,10 +32,7 @@ function getTotalPrice() {
   
   let total=document.getElementById('total-'+i);
   let mytotal=Number(price.innerHTML)*Number(qty.value);
-  
-  
  
- alert(mytotal);
   total.innerHTML=mytotal;
   totalAcum+=mytotal;
  
@@ -108,7 +100,6 @@ function createNewItem(name,price){
 
 function calculatePrice(){
 	
-let productPrice=getPriceByProduct();
 
 
 }
