@@ -28,6 +28,7 @@ function getTotalPrice() {
  {
    
   let price=document.getElementById('price-'+i);
+  if (price==null)continue;
   let qty=document.getElementById('qty-'+i);
   
   let total=document.getElementById('total-'+i);
@@ -86,9 +87,12 @@ function createNewItem(name,price){
   
    children[1].id='price-'+totalQty;
    children[2].id='total-'+totalQty
+   children[2].innerHTML='$0';
    
      children = newitm.querySelectorAll('input');
-    children[0].id='qty-'+totalQty;
+     children[0].id='qty-'+totalQty;
+	 children[0].value='';
+	
      children = newitm.querySelectorAll('button');
     children[0].id='delete-'+totalQty;
 	children[0].onclick = deleteItem;

@@ -1,16 +1,17 @@
 .flexy {
   display: flex;
-   width: 1000px;
-  margin-left:200px;
+   width: 100%;
+  margin:40px;
+  
   justify-content: space-between;
 }
 
 
-.flexy  div:nth-of-type(1) {flex-grow: 1;text-align:left;margin-left:10px}
-.flexy  div:nth-of-type(2) {flex-grow: 1;text-align:left;margin-left:10px}
-.flexy  div:nth-of-type(3) {flex-grow: 1;text-align:left;margin-left:10px}
-.flexy  div:nth-of-type(4) {flex-grow: 1;text-align:left;margin-left:10px}
-.flexy  div:nth-of-type(5) {flex-grow: 1;text-align:left;margin-left:10px}
+.flexy  div:nth-of-type(1) {width:100%;margin-left:100px; flex-grow: 1;}
+.flexy  div:nth-of-type(2) {width:100%;flex-grow: 1;}
+.flexy  div:nth-of-type(3) {width:100%;flex-grow: 1;}
+.flexy  div:nth-of-type(4) {width:100%;flex-grow: 1;}
+.flexy  div:nth-of-type(5) {width:100%;flex-grow: 1;}
 
 input {
   border: solid 1px black;

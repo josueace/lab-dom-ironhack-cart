@@ -19,47 +19,51 @@
   
    
    <div id='items'>
-   
-    <div class="flex-container flexy" id="flexy-0">
-        <div style='width:350px' ><span>IronBubble-head</span></div>
-        <div style='width:350px'>$<span id='price-0'>25.00</span></div>
-        <div style='width:600px'>
+    <div class="flexy" id="flexy-0">
+        <div  ><span>IronBubble-head</span></div>
+        <div>$<span id='price-0'>25.00</span></div>
+        <div >
           <label>QTY</label>
           <input id='qty-0' type="text" >
         </div>
-        <div style='width:350px'>$<span id='total-0'>0.00</span></div>
-        <div style='width:350px'><button id='delete-0' class="btn-delete" onclick="deleteItem()">Delete</button></div>
+        <div >$<span id='total-0'>0.00</span></div>
+        <div ><button id='delete-0' class="btn-delete" onclick="deleteItem()">Delete</button></div>
     </div>
 	
-	<div class="flex-container flexy" id="flexy-1">
-        <div style='width:350px'><span>IronShirt</span></div>
-        <div style='width:350px'>$<span  id='price-1'>15.00</span></div>
-        <div style='width:600px'>
+	<div class="flexy" id="flexy-1">
+        <div ><span>IronShirt</span></div>
+        <div >$<span  id='price-1'>15.00</span></div>
+        <div >
           <label>QTY</label>
           <input id='qty-1' type="text" >
         </div>
-        <div style='width:350px'>$<span id='total-1'>0.00</span></div>
-        <div style='width:350px'><button id='delete-1' class="btn-delete" onclick="deleteItem()">Delete</button></div>
+        <div >$<span id='total-1'>0.00</span></div>
+        <div ><button id='delete-1' class="btn-delete" onclick="deleteItem()">Delete</button></div>
     </div>
-	
-	
-	
 	</div>
 	
+    <div class="flexy" id="flexy-0">
+        <div  ><input id='elename' type="text" ></div>
+        <div><input id='eleprice' type="text" ></div>
+        <div ></div>
+        <div ></div>
+        <div ><button  id="new-item-create">Create</button></div>
+    </div>
+
 	
 	<br>
 	<br>
     
    
 	<div style='margin-left:200px;'>
-	<input id='elename' type="text" >
-	<input id='eleprice' type="text" >
-    <button  id="new-item-create">Create Item</button>
+	
+	
+    
 	</div>
 	
 	 <button id='calc-prices-button' class="btn-success">Calculate Prices</button>
-	
-<div style='text-align:center' >Total Price:$<span id='total'>0.00</span></div>
+	<br>
+<div style='text-align:center;font-size:22px' ><h1>Total Price:$<span id='total'>0.00</span></h1></div>
 
 
 
